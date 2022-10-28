@@ -11,7 +11,17 @@
   </head>
 
   <body>
-    <%= render 'layouts/messages' %>
-    <%= yield %>
+     <header>
+      <%= render 'layouts/navbar' %>
+    </header>
+    <main>
+      <div class="container mt-3">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <%= render 'layouts/footer' %>
+    </footer>
   </body>
 </html>
