@@ -18,5 +18,10 @@ module BlogWithHotwire
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.generators.stylesheets = false
+    config.generators.javascripts = false
+    config.generators.helper = false
+    config.generators.view_specs = false
+    config.generators.helper_specs = false
   end
 end
