@@ -1,0 +1,3 @@
+<p id='likes'>
+  <strong><%= button_to "Likes: #{article.likes.count}", likes_path(article: article, user: current_user), method: :post %></strong>
+</p>
